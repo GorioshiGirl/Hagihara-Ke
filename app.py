@@ -3,6 +3,10 @@ import os
 import json
 import requests
 
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # Renderが環境変数で渡すポート番号を取得
+    app.run(host="0.0.0.0", port=port)        # すべての外部アクセスを受け付ける設定
+
 app = Flask(__name__)
 
 # 環境変数からLINEのチャンネルアクセストークンを取得
