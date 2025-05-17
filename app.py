@@ -31,7 +31,7 @@ def webhook():
     except Exception as e:
         print(f"Error: {e}")
         abort(400)
-    return "OK", 200
+    return 200
 
 def generate_reply(user_text):
     if user_text == "こんにちは":
