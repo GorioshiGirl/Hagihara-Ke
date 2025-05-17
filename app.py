@@ -10,7 +10,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=port)        # すべての外部アクセスを受け付ける設定
 
 # 環境変数からLINEのチャンネルアクセストークンを取得
-LINE_CHANNEL_ACCESS_TOKEN = os.getenv("ufHQBzHYTmbwdeSU8ZuKWfgIcbNi4S6/ntOLYTJI/ymR8yoj+PEVaMDZr3+/4qL2L1c/Picgx14K7IcsLXmlK5IQC3doeVTtl4ir/wwRjo3Nn3FhqQDf0V3i1Ucg0+xZyybhOPJyo8R4MSTrSPGzfQdB04t89/1O/w1cDnyilFU=")
+LINE_CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN")
 LINE_REPLY_ENDPOINT = "https://api.line.me/v2/bot/message/reply"
 
 @app.route("/", methods=["GET"])
