@@ -34,7 +34,7 @@ def generate_reply(user_text):
         return "こんにちは！今日はいい天気ですね ☀️"
     elif user_text == "さようなら":
         return "またね〜！👋"
-    elif user_text == "うんこ"
+    elif user_text == "うんこ":
         return "うんこ～！💩"
     else:
         return f"「{user_text}」ですね！それについてはまだ学習中です💭"
