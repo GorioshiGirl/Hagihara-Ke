@@ -28,6 +28,10 @@ def webhook():
         print(f"Error: {e}")
         abort(400)
     return "OK", 200
+    
+@app.route("/", methods=["GET"])
+def health_check():
+    return "Bot is alive", 200
 
 def generate_reply(user_text):
     if user_text == "こんにちは":
